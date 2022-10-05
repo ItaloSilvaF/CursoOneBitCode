@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Geostar&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+h1 {
+  font-family: Geostar;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+  border: 2px solid;
+}
+
+h2 {
+  font-family: Geostar, cursive;
+  margin: 50px auto 30px auto;
+  width: 50%;
+  border: 2px solid;
+  padding: 100px 100px 1px 1px;
+}
