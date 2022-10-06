@@ -1,0 +1,44 @@
+.img-content {
+  width: 765px;
+  height: 400px;
+}
+
+.text-content {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-device-width: 2560px) and (min-width: 1440px) {
+  body {
+    background-color: #020241;
+    color: white;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .img-content {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-device-width: 425px) {
+  .img-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .title-content {
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-device-width: 320px) {
+  .text-content {
+    font-size: 14px;
+  }
+}
