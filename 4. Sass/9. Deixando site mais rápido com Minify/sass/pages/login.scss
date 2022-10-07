@@ -1,0 +1,5 @@
+.container {
+  p {
+    @include text-style($description-green, 16px, sans-serif);
+  }
+}

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#title {
+  color: purple;
+}
+
+.title1 {
+  background-color: black;
+  color: white;
+}
+
+.title2 {
+  background-color: white;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
