@@ -1,0 +1,20 @@
+/* Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+
+/* Todos os itens */
+* {
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Elemento Comuns */
+@import "./communElements/variables.scss";
+@import "./communElements/communElements.scss";
+
+/* Paginas */
+@import "./pages/home.scss";
+@import "./pages/falcon9.scss";
+@import "./pages/humanSpaceFligth.scss";

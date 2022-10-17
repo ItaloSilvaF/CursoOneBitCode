@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Offcanvas</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .title {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
+
+      .btn {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Off canvas padrão (Dois jeitos de chamar) -->
+    <div class="title">
+      <p class="h1">Off canvas padrão (Dois jeitos de chamar)</p>
+    </div>
+
+    <div class="container">
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasExample"
+        role="button"
+        aria-controls="offcanvasExample"
+      >
+        Link with href
+      </a>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        Button with data-bs-target
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Off canvas de cima -->
+    <div class="title">
+      <p class="h1">Off canvas de cima</p>
+    </div>
+
+    <div class="container">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"
+      >
+        Clique no botão parar ter uma surpresa no topo
+      </button>
+      <div
+        class="offcanvas offcanvas-top"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="offcanvasTopLabel">Título da Surpresa no Topo</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit rerum
+          eius illum, alias enim earum temporibus veniam. Officia quae nesciunt
+          iure unde dolorem laborum? Optio corrupti voluptas vero veritatis unde
+          fugit amet delectus sint ratione ipsa sapiente expedita minima
+          laudantium, sunt cupiditate architecto est culpa praesentium eaque
+          molestias. Voluptate, est? Ea harum, molestiae sapiente dolores
+          similique modi maiores minus fugiat explicabo beatae adipisci quaerat
+          ab? Adipisci eum impedit inventore architecto fugit laboriosam vel
+          assumenda cum. Voluptate dolorem consequuntur mollitia velit
+          accusamus, asperiores ad nisi repellat corporis itaque delectus eos,
+          quidem quaerat earum modi perferendis saepe voluptas. Sunt at officiis
+          soluta ab. Tempore, et nihil? Quam expedita corrupti, obcaecati
+          possimus neque dicta ea laudantium quae maiores aliquam magnam illum
+          sit facere dolorum atque iste quia libero doloremque, sunt temporibus,
+          voluptatum placeat quis. Illo expedita deserunt a dolore, blanditiis
+          quas architecto accusamus? Repellat at expedita eveniet molestias
+          illo, provident quam laudantium sunt ullam tempora rem vitae?
+          Laboriosam odit impedit aspernatur autem hic incidunt saepe harum
+          obcaecati, provident nesciunt distinctio nostrum quia at accusamus
+          quidem iure cumque assumenda eum explicabo. Mollitia numquam libero,
+          iste autem consequuntur quas reprehenderit corporis nihil eius dolor
+          alias labore omnis reiciendis saepe voluptate odit sunt in amet
+          doloribus porro. Unde, maxime animi ipsa commodi nam in vero
+          consequatur asperiores tempora ipsum, fugit officia voluptates nostrum
+          nisi provident assumenda fugiat blanditiis quidem sapiente. Commodi
+          tempore facere culpa laboriosam veniam?
+        </div>
+      </div>
+    </div>
+
+    <!-- Script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
